@@ -11,16 +11,16 @@ const groupBy = (arr: any[], key: string) => {
   }
   return arr?.reduce((acc, item) => {
     // 找到当前 item 的对应的 key 的 value 值
-    const keyValue  = item?.[key]
-    if (!keyValue ) {
+    const keyValue = item?.[key]
+    if (!keyValue) {
       return arr
     }
     // 如果 acc 中没有这个 key，初始化一个数组
-    if (!acc[keyValue ]) {
-      acc[keyValue ] = []
+    if (!acc[keyValue]) {
+      acc[keyValue] = []
     }
     // 将当前 item 添加到对应的数组中
-    acc[keyValue ].push(item)
+    acc[keyValue].push(item)
     return acc
   }, {})
 }
