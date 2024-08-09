@@ -3,7 +3,7 @@
  * @param count 颜色数量
  * @returns 不重复的颜色数组
  */
-export const generateUniqueBrightColors = (count: number): string[] => {
+const generateUniqueBrightColors = (count: number): string[] => {
   const colors = new Set<string>()
 
   // 生成指定数量的不重复颜色
@@ -21,3 +21,5 @@ export const generateUniqueBrightColors = (count: number): string[] => {
 
   return Array.from(colors)
 }
+
+export default generateUniqueBrightColors
