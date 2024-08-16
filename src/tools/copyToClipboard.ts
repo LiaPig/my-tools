@@ -13,7 +13,6 @@ function fallbackCopyTextToClipboard(text: string) {
 
   // 尝试执行复制操作
   const result = document.execCommand('copy')
-  document.body.removeChild(textarea)
   if (result) {
     console.log('使用回退方法复制成功')
   } else {
