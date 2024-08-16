@@ -30,7 +30,7 @@ function fallbackCopyTextToClipboard(text: string) {
  */
 function copyToClipboard(text: string) {
   // 检查异步剪贴板 API 是否可用
-  if (navigator.clipboard && navigator.clipboard.writeText) {
+  if (navigator.clipboard?.writeText) {
     // 使用异步 Clipboard API 复制文本
     navigator.clipboard.writeText(text)
       .then(() => {
