@@ -4,7 +4,7 @@
  * @param object 要下载的数据对象。
  * @param filename 下载文件的名称，包括扩展名。
  */
-function downloadJSON(object: Object, filename: string) {
+function downloadJSON(object: Record<string, unknown>, filename: string) {
    // 将数据对象转换为JSON字符串，并创建一个Blob对象
   const blob = new Blob([JSON.stringify(object)], { type: 'application/json' })
 
