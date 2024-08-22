@@ -4,6 +4,7 @@ import formatDateRangeToTimeBounds from "./formatDateRangeToTimeBounds"
 import copyToClipboard from "./copyToClipboard"
 import downloadJSON from "./downloadJSON"
 import delay from "./delay"
+import debounce from "./debounce"
 
 export {
   groupBy,
@@ -12,4 +13,5 @@ export {
   copyToClipboard,
   downloadJSON,
   delay,
+  debounce,
 }
