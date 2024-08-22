@@ -3,6 +3,7 @@ import generateUniqueBrightColors from "./generateUniqueBrightColors"
 import formatDateRangeToTimeBounds from "./formatDateRangeToTimeBounds"
 import copyToClipboard from "./copyToClipboard"
 import downloadJSON from "./downloadJSON"
+import delay from "./delay"
 
 export {
   groupBy,
@@ -10,4 +11,5 @@ export {
   formatDateRangeToTimeBounds,
   copyToClipboard,
   downloadJSON,
+  delay,
 }
