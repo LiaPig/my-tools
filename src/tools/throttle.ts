@@ -10,7 +10,7 @@ function throttle<T extends (...args: any[]) => any>(func: T, interval: number):
     throw new Error('Interval cannot be negative.')
   }
   // 记录上一次函数执行的时间戳
-  let lastTime = new Date().getTime()
+  let lastTime = 0
 
   /**
   * 返回一个新的函数，用于实现节流逻辑。
@@ -20,10 +20,9 @@ function throttle<T extends (...args: any[]) => any>(func: T, interval: number):
   return function (...args) {
     // 保存当前函数调用的上下文
     const context = this
-    // 记录当前时间
-    const now = 0
-
-    // 如果当前时间与上一次执行时间的差值大于等于指定的时间间隔，则执行函数
+    // 记录现在的时间
+    const now = new Date().getTime()
+    //
     if (now - lastTime >= interval) {
       // 执行原始函数，并应用当前上下文和参数
       func.apply(context, args)
