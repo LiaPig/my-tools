@@ -5,6 +5,7 @@ import copyToClipboard from "./copyToClipboard"
 import downloadJSON from "./downloadJSON"
 import delay from "./delay"
 import debounce from "./debounce"
+import throttle from "./throttle"
 
 export {
   groupBy,
@@ -14,4 +15,5 @@ export {
   downloadJSON,
   delay,
   debounce,
+  throttle,
 }
