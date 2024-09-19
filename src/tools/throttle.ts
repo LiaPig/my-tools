@@ -21,7 +21,7 @@ function throttle<T extends (...args: any[]) => any>(func: T, interval: number):
     // 保存当前函数调用的上下文
     const context = this
     // 记录当前时间
-    const now = new Date().getTime()
+    const now = 0
 
     // 如果当前时间与上一次执行时间的差值大于等于指定的时间间隔，则执行函数
     if (now - lastTime >= interval) {
