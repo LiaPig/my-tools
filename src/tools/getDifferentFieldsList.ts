@@ -1,5 +1,5 @@
 // 定义一个类型，表示对象数组，其中对象的键是字符串，值是任意类型
-declare type ObjectArray = {
+type ObjectArray = {
   [key: string]: any
 }[]
 
