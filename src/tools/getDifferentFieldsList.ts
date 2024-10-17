@@ -44,8 +44,8 @@ function getDifferentFieldsList(
   // 1. 获取到两个对象数组里的所有字段（key/field）
   const differentFields = Array.from(
     new Set([
-      ...list.reduce((arr: string[], item) => [...arr, ...Object.keys(item)], []),
-      ...anotherList.reduce((arr: string[], item) => [...arr, ...Object.keys(item)], [])
+      ...list.flatMap(item => Object.keys(item)),
+      ...anotherList.flatMap(item => Object.keys(item))
     ])
   )
   // 2. 通用函数：根据 keyField 得出不一样的字段表，并清洗成带有 differentFields 字段的数据格式
