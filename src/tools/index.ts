@@ -4,6 +4,7 @@ import formatDateRangeToTimeBounds from "./formatDateRangeToTimeBounds"
 import copyToClipboard from "./copyToClipboard"
 import downloadJSON from "./downloadJSON"
 import delay from "./delay"
+import getDifferentFieldsList from "./getDifferentFieldsList"
 import debounce from "./debounce"
 
 export {
@@ -13,5 +14,6 @@ export {
   copyToClipboard,
   downloadJSON,
   delay,
+  getDifferentFieldsList,
   debounce,
 }
