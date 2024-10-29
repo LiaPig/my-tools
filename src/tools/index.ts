@@ -6,6 +6,7 @@ import downloadJSON from "./downloadJSON"
 import delay from "./delay"
 import getDifferentFieldsList from "./getDifferentFieldsList"
 import debounce from "./debounce"
+import throttle from "./throttle"
 
 export {
   groupBy,
@@ -16,4 +17,5 @@ export {
   delay,
   getDifferentFieldsList,
   debounce,
+  throttle,
 }
